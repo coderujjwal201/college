@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- method attribute is used to specify how to send form data. The most common methods are GET and POST. -->
+    <form action="thank_you.html" method="get">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Ujjwal Kumar" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="ujjwal@example.com" required>
+        <br><br>
+        <label for="phone">Phone:</label>
+        <input type="number" id="phone" name="phone" minlength="10" maxlength="12" required>
+        
+        <!--gender-->
+        <br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        
+        <label for="female">Female</label>
+        
+        <h1>Thank You!</h1>
+    </form>
+</body>
+</html>
